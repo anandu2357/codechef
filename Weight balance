@@ -1,0 +1,10 @@
+for _ in range (int(input())):
+    a,b,x,y,m=map(int,input().split())
+    diff=b-a
+    p=x*m
+    q=y*m
+    
+    if(diff>=p and diff<=q ):
+        print(1)
+    else:
+        print(0)
