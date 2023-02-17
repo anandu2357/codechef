@@ -1,0 +1,10 @@
+for _ in range (int(input())):
+    x,y=map(int,input().split())
+    choc=2*x
+    candy=5*y
+    if(choc==candy):
+        print("Either")
+    elif(choc>candy):
+        print("Chocolate")
+    elif(choc<candy):
+        print("Candy")
