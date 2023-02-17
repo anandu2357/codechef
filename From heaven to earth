@@ -1,0 +1,9 @@
+for _ in range (int (input())):
+    n,x,y=map(int,input().split())
+    elev=(2*n)/y
+    sta=(1.41*n)/x
+    if(elev<sta):
+        print("Elevator")
+    elif(sta<=elev):
+        print("Stairs")
+    
