@@ -1,0 +1,11 @@
+for _ in range (int(input())):
+    n,x,y=map(int,input().split())
+    if(n==1 and x==y):
+        print("YES")
+    elif(n>1 and y%x==0):
+        print("YES")
+    elif(y==0):
+        print("YES")
+    else:
+        print("NO")
+        
