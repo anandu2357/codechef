@@ -1,0 +1,19 @@
+for _ in range (int(input())):
+    n,k=map(int,input().split())
+    a=list(map(int,input().split()))
+    dif=0
+    c=0
+    for i in range (len(a)):
+        a[i]+=dif
+        if(a[i]>=k):
+            dif=a[i]-k
+            c=1
+        else:
+            c=0
+            t=i
+            break
+    if(c==1):
+        print("YES")
+    elif(c==0):
+        print("NO", i+1)
+        
