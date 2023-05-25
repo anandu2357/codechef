@@ -1,0 +1,13 @@
+for _ in range (int(input())): 
+    n=int(input())
+    scr=input()
+    a=0
+    b=0
+    if(scr[0]=='A'):
+        a+=1
+    for i in range (n-1):
+        if (scr[i]=='A' and scr[i+1]=='A'):
+            a+=1
+        elif(scr[i]=='B' and scr[i+1]=='B'):
+            b+=1
+    print(a,b)
